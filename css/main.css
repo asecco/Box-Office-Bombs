@@ -1,0 +1,54 @@
+html {
+    background: linear-gradient(-45deg, #009FFF, #ec2F4B);
+    background-size: 500% 500%;
+    animation: gradient 10s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+}
+
+.wrapper {
+    text-align: center;
+}
+
+.playBtn {
+  background-color: #fbeee0;
+  border: 2px solid #240b36;
+  border-radius: 30px;
+  box-shadow: #240b36 4px 4px 0 0;
+  color: #240b36;
+  cursor: pointer;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 0 50px;
+  line-height: 50px;
+  text-decoration: none;
+  position: absolute;
+  top: 50%;
+  left: 47%;
+}
+
+.playBtn:hover {
+  background-color: white;
+}
+
+.playBtn:active {
+  box-shadow: #240b36 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
