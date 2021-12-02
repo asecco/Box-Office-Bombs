@@ -12,7 +12,7 @@ function switchVisible() {
   }
 }
 
-boFilms = [
+let boFilms = [
     {
         "title": "Star Wars: Episode IV - A New Hope (1977)",
         "value": "$775,398,007"
@@ -114,3 +114,29 @@ boFilms = [
         "value": "$773,350,147"
     },
 ]
+
+let title1=document.getElementById("title1")
+let value1=document.getElementById("value1")
+
+let title2=document.getElementById("title2")
+let value2=document.getElementById("value2")
+
+let highBtn = document.getElementById("higher")
+let lowBtn = document.getElementById("lower")
+
+a = random()
+b = random()
+if (a == b && b !== 50) a = b + 1
+else a=b-1
+
+function random() {
+    r = Math.floor(Math.random()*25)
+    return r
+}
+random(1)
+
+title1.innerHTML=`<b>Title: </b>${boFilms[a].title}`
+value1.innerHTML=`<b>Value: </b>${boFilms[a].value}`
+
+title2.innerHTML=`<b>Title: </b>${boFilms[b].title}`
+value2.innerHTML=`<b>Value: </b>${boFilms[b].value}`
