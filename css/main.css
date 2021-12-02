@@ -2,6 +2,7 @@ html {
     background: linear-gradient(-45deg, #009FFF, #ec2F4B);
     background-size: 500% 500%;
     animation: gradient 10s ease infinite;
+    font-family: "Poppins", sans-serif;
 }
 
 @keyframes gradient {
@@ -32,7 +33,7 @@ html {
 #instructions {
   text-align: center;
   color: white;
-  font-size: 34px;
+  font-size: 32px;
   font-weight: bold;
   line-height: 125px;
 }
@@ -41,7 +42,7 @@ html {
     text-align: center;
 }
 
-.playBtn {
+#playBtn {
   background-color: #fbeee0;
   border: 2px solid #240b36;
   border-radius: 30px;
@@ -58,11 +59,7 @@ html {
   left: 46%;
 }
 
-.playBtn:hover {
-  background-color: white;
-}
-
-.playBtn:active {
+#playBtn:active {
   box-shadow: #240b36 2px 2px 0 0;
   transform: translate(2px, 2px);
 }

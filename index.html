@@ -7,16 +7,32 @@
     <meta name="description" content="Addictive game where you compare two films and guess which one made more money.">
     <link rel="stylesheet" href="css/main.css">
     <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400"/>
     <title>Box Office Bombs</title>
 </head>
 <body>
-    
-    <img src="/images/logo.png" class="logo" alt="Box Office Bombs">
 
-    <h2 id="instructions">Guess which film made more money in the box office.</h2>
+    <div id="homepage">
+        <a href="/"><img src="/images/logo.png" class="logo" alt="Box Office Bombs"></a>
+        <h2 id="instructions">Guess which film made more money in the box office.</h2>
+        <div class="wrapper">
+            <button id="playBtn">Play</button>
+        </div>
+    </div>
 
-    <div class="wrapper">
-        <button class="playBtn">Play</button>
+    <div id="content" style="display: none;">
+        <section>
+            <div id="column1">
+                <p id="title"><b>Title: </b></p>
+                <p id="value"><b>Value: </b></p>
+            </div>
+            <div id="column2">
+                <p id="title2"><b>Title: </b></p>
+                <p id="value2"><b>Value: </b></p>
+                <button type="button" id="higher">Higher</button>
+                <button type="button" id="lower">Lower</button>
+            </div>
+        </section>
     </div>
 
     <script src="/js/main.js"></script>
