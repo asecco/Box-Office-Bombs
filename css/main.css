@@ -75,9 +75,16 @@ section {
   box-shadow: 4px 4px 0 black;
 }
 
+#columns {
+  text-align: center;
+  color: black;
+  font-size: 28px;
+  font-weight: bold;
+}
+
 #column1 {
   width: 50%;
-  min-height: 500px;
+  min-height: 525px;
   background-color: #b92b27;
 }
 
@@ -100,6 +107,8 @@ section {
   width: 125px;
   height: 55px;
   text-align: center;
+  left: 50%;
+  margin-bottom: 15px;
 }
 
 #higher:hover {
@@ -126,6 +135,7 @@ section {
   width: 125px;
   height: 55px;
   text-align: center;
+  left: 50%;
 }
 
 #lower:hover {

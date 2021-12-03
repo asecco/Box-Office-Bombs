@@ -138,11 +138,11 @@ function random() {
 }
 random(1)
 
-title1.innerHTML=`<b>Title: </b>${boFilms[a].title}`
-value1.innerHTML=`<b>Value: </b>${boFilms[a].value}`
+title1.innerHTML=`${boFilms[a].title}`
+value1.innerHTML=`${boFilms[a].value}`
 
-title2.innerHTML=`<b>Title: </b>${boFilms[b].title}`
-value2.innerHTML=`<b>Value: </b>${boFilms[b].value}`
+title2.innerHTML=`${boFilms[b].title}`
+value2.innerHTML=`${boFilms[b].value}`
 
 highBtn.addEventListener("click", function() {
     if (boFilms[b].value >= boFilms[a].value) {
@@ -150,11 +150,11 @@ highBtn.addEventListener("click", function() {
         scoreIncrease()
         c = random()
 
-        title1.innerHTML=`<b>Title: </b>${boFilms[b].title}`
-        value1.innerHTML=`<b>Value: </b>${boFilms[b].value}`
+        title1.innerHTML=`${boFilms[b].title}`
+        value1.innerHTML=`${boFilms[b].value}`
 
-        title2.innerHTML=`<b>Title: </b>${boFilms[c].title}`
-        value2.innerHTML=`<b>Value: </b>${boFilms[c].value}`
+        title2.innerHTML=`${boFilms[c].title}`
+        value2.innerHTML=`${boFilms[c].value}`
 
         boFilms[b].title=boFilms[c].title
         boFilms[b].value=boFilms[c].value
@@ -170,11 +170,11 @@ lowBtn.addEventListener("click", function() {
         scoreIncrease()
         c=random()
 
-        title1.innerHTML=`<b>Title: </b>${boFilms[b].title}`
-        value1.innerHTML=`<b>Value: </b>${boFilms[b].value}`
+        title1.innerHTML=`${boFilms[b].title}`
+        value1.innerHTML=`${boFilms[b].value}`
 
-        title2.innerHTML=`<b>Title: </b>${boFilms[c].title}`
-        value2.innerHTML=`<b>Value: </b>${boFilms[c].value}`
+        title2.innerHTML=`${boFilms[c].title}`
+        value2.innerHTML=`${boFilms[c].value}`
 
         boFilms[b].title=boFilms[c].title
         boFilms[b].value=boFilms[c].value
