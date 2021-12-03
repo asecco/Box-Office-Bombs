@@ -124,10 +124,13 @@ let value2=document.getElementById("value2")
 let highBtn = document.getElementById("higher")
 let lowBtn = document.getElementById("lower")
 
+var score = 0;
+var scoreboard = document.getElementById("scoreboard");
+
 a = random()
 b = random()
-if (a == b && b !== 50) a = b + 1
-else a=b-1
+if (a == b && b !== 25) a = b + 1
+else a = b - 1
 
 function random() {
     r = Math.floor(Math.random()*25)
@@ -140,3 +143,28 @@ value1.innerHTML=`<b>Value: </b>${boFilms[a].value}`
 
 title2.innerHTML=`<b>Title: </b>${boFilms[b].title}`
 value2.innerHTML=`<b>Value: </b>${boFilms[b].value}`
+
+highBtn.addEventListener("click", function() {
+    if (boFilms[b].value >= boFilms[a].value) {
+        alert("Correct")
+        scoreIncrease()
+    }
+    else {
+        alert("Incorrect")
+    }
+})
+
+lowBtn.addEventListener("click", function() {
+    if (boFilms[b].value <= boFilms[a].value) {
+        alert("Correct")
+        scoreIncrease()
+    }
+    else {
+        alert("Incorrect")
+    }
+})
+
+function scoreIncrease() {
+    score++;
+    scoreboard.innerHTML = "Score: " + score;
+}

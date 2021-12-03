@@ -59,7 +59,16 @@ html {
   left: 46%;
 }
 
+#playBtn:hover {
+  box-shadow: 4px 4px 0 #240b36;
+  transform: translate(-4px,-4px);
+}
+
 #playBtn:active {
   box-shadow: #240b36 2px 2px 0 0;
   transform: translate(2px, 2px);
+}
+
+section {
+  display: flex;
 }
