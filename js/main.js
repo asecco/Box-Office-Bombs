@@ -12,6 +12,8 @@ function switchVisible() {
   }
 }
 
+// Database of Films - values from https://www.boxofficemojo.com
+
 let boFilms = [
     {
         "title": "Star Wars: Episode IV - A New Hope (1977)",
@@ -19,14 +21,9 @@ let boFilms = [
         "value": "$775,398,007"
     },
     {
-        "title": "Star Wars: Episode V - The Empire Strikes Back (1980)",
-        "thumbnail": "https://i.ytimg.com/vi/i38PB4cQZxI/maxresdefault.jpg",
-        "value": "$538,375,067"
-    },
-    {
-        "title": "Star Wars: Episode VI - Return of the Jedi (1983)",
-        "thumbnail": "https://coolwallpapers.me/picsup/5777387-star-wars-episode-vi-return-jedi-wallpapers.jpg",
-        "value": "$475,106,177"
+        "title": "Avengers (2012)",
+        "thumbnail": "https://i0.wp.com/fearofaghostplanet.com/wp-content/uploads/2012/05/The-Avengers.jpg",
+        "value": "$1,518,815,515"
     },
     {
         "title": "Star Wars: Episode I - The Phantom Menace (1999)",
@@ -34,19 +31,14 @@ let boFilms = [
         "value": "$1,027,082,707"
     },
     {
-        "title": "Star Wars: Episode II - Attack of the Clones (2002)",
-        "thumbnail": "https://static.sweet.tv/images/cache/movie_banners/BDJX6EQCMVXCAAQ=/16339-star-wars-episode-ii-attack-of-the-clones_1280x720.jpg",
-        "value": "$653,779,970"
+        "title": "The Dark Knight Rises (2012)",
+        "thumbnail": "http://wallpaperstock.net/the-dark-knight-rises-characters_wallpapers_33556_1280x720.jpg",
+        "value": "$1,081,142,612"
     },
     {
         "title": "Star Wars: Episode III - Revenge of the Sith (2005)",
         "thumbnail": "https://www.zastavki.com/pictures/1280x720/2005/Games_Star_Wars_Episode_III__Revenge_of_the_Sith_001428_26.jpg",
         "value": "$868,390,560"
-    },
-    {
-        "title": "Avengers (2012)",
-        "thumbnail": "https://i0.wp.com/fearofaghostplanet.com/wp-content/uploads/2012/05/The-Avengers.jpg",
-        "value": "$1,518,815,515"
     },
     {
         "title": "Avengers: Age of Ultron (2015)",
@@ -59,19 +51,14 @@ let boFilms = [
         "value": "$370,569,774"
     },
     {
+        "title": "Star Wars: Episode VI - Return of the Jedi (1983)",
+        "thumbnail": "https://coolwallpapers.me/picsup/5777387-star-wars-episode-vi-return-jedi-wallpapers.jpg",
+        "value": "$475,106,177"
+    },
+    {
         "title": "Captain America: The Winter Soldier (2014)",
         "thumbnail": "https://www.bhmpics.com/download/captain_america__the_winter_soldier_new_posters-1280x720.jpg",
         "value": "$714,421,503"
-    },
-    {
-        "title": "The Incredible Hulk (2008)",
-        "thumbnail": "https://images.hdqwalls.com/download/the-incredible-hulk-1k-1280x720.jpg",
-        "value": "$264,770,996"
-    },
-    {
-        "title": "Spider-Man (2002)",
-        "thumbnail": "https://wallpaperaccess.com/full/496545.jpg",
-        "value": "$825,025,036"
     },
     {
         "title": "Spider-Man 2 (2004)",
@@ -79,9 +66,24 @@ let boFilms = [
         "value": "$788,976,453"
     },
     {
+        "title": "Star Wars: Episode V - The Empire Strikes Back (1980)",
+        "thumbnail": "https://i.ytimg.com/vi/i38PB4cQZxI/maxresdefault.jpg",
+        "value": "$538,375,067"
+    },
+    {
+        "title": "The Incredible Hulk (2008)",
+        "thumbnail": "https://images.hdqwalls.com/download/the-incredible-hulk-1k-1280x720.jpg",
+        "value": "$264,770,996"
+    },
+    {
         "title": "Spider-Man 3 (2007)",
         "thumbnail": "https://images8.alphacoders.com/457/457873.jpg",
         "value": "$894,983,373"
+    },
+    {
+        "title": "Star Wars: Episode II - Attack of the Clones (2002)",
+        "thumbnail": "https://static.sweet.tv/images/cache/movie_banners/BDJX6EQCMVXCAAQ=/16339-star-wars-episode-ii-attack-of-the-clones_1280x720.jpg",
+        "value": "$653,779,970"
     },
     {
         "title": "Spider-Man: Homecoming (2017)",
@@ -89,9 +91,9 @@ let boFilms = [
         "value": "$880,166,924"
     },
     {
-        "title": "Spider-Man: Far from Home (2019)",
-        "thumbnail": "https://wallpaperaccess.com/full/1342814.jpg",
-        "value": "$1,131,927,996"
+        "title": "Man of Steel (2013)",
+        "thumbnail": "https://eskipaper.com/images/man-of-steel-2013-movie-1.jpg",
+        "value": "$668,045,518"
     },
     {
         "title": "Venom (2018)",
@@ -104,14 +106,9 @@ let boFilms = [
         "value": "$2,048,359,754"
     },
     {
-        "title": "Avengers: Endgame (2019)",
-        "thumbnail": "https://uhdwallpapers.org/uploads/converted/19/04/21/avengers-endgame-1280x720_898598-mm-90.jpg",
-        "value": "$2,797,501,328"
-    },
-    {
-        "title": "Man of Steel (2013)",
-        "thumbnail": "https://eskipaper.com/images/man-of-steel-2013-movie-1.jpg",
-        "value": "$668,045,518"
+        "title": "Spider-Man: Far from Home (2019)",
+        "thumbnail": "https://wallpaperaccess.com/full/1342814.jpg",
+        "value": "$1,131,927,996"
     },
     {
         "title": "Deadpool (2016)",
@@ -119,9 +116,19 @@ let boFilms = [
         "value": "$782,836,791"
     },
     {
+        "title": "Spider-Man (2002)",
+        "thumbnail": "https://wallpaperaccess.com/full/496545.jpg",
+        "value": "$825,025,036"
+    },
+    {
         "title": "Batman Begins (2005)",
         "thumbnail": "http://wallpaperstock.net/batman-begins_wallpapers_10323_1280x720.jpg",
         "value": "$373,661,946"
+    },
+    {
+        "title": "Guardians of the Galaxy (2014)",
+        "thumbnail": "https://data.1freewallpapers.com/download/2014-guardians-of-the-galaxy-1280x720.jpg",
+        "value": "$773,350,147"
     },
     {
         "title": "The Dark Knight (2008)",
@@ -129,14 +136,9 @@ let boFilms = [
         "value": "$1,005,973,645"
     },
     {
-        "title": "The Dark Knight Rises (2012)",
-        "thumbnail": "http://wallpaperstock.net/the-dark-knight-rises-characters_wallpapers_33556_1280x720.jpg",
-        "value": "$1,081,142,612"
-    },
-    {
-        "title": "Guardians of the Galaxy (2014)",
-        "thumbnail": "https://data.1freewallpapers.com/download/2014-guardians-of-the-galaxy-1280x720.jpg",
-        "value": "$773,350,147"
+        "title": "Avengers: Endgame (2019)",
+        "thumbnail": "https://uhdwallpapers.org/uploads/converted/19/04/21/avengers-endgame-1280x720_898598-mm-90.jpg",
+        "value": "$2,797,501,328"
     },
 ]
 
