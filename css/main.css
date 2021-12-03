@@ -71,4 +71,76 @@ html {
 
 section {
   display: flex;
+  border: 2px solid black;
+  box-shadow: 4px 4px 0 black;
+}
+
+#column1 {
+  width: 50%;
+  min-height: 500px;
+  background-color: #b92b27;
+}
+
+#column2 {
+  width: 50%;
+  background-color: #1565C0;
+}
+
+#higher {
+  background-color: #fbeee0;
+  border: 2px solid #240b36;
+  border-radius: 30px;
+  box-shadow: #240b36 4px 4px 0 0;
+  color: #240b36;
+  cursor: pointer;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 50px;
+  text-decoration: none;
+  width: 125px;
+  height: 55px;
+  text-align: center;
+}
+
+#higher:hover {
+  box-shadow: 4px 4px 0 #240b36;
+  transform: translate(-4px,-4px);
+}
+
+#higher:active {
+  box-shadow: #240b36 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+
+#lower {
+  background-color: #fbeee0;
+  border: 2px solid #240b36;
+  border-radius: 30px;
+  box-shadow: #240b36 4px 4px 0 0;
+  color: #240b36;
+  cursor: pointer;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 50px;
+  text-decoration: none;
+  width: 125px;
+  height: 55px;
+  text-align: center;
+}
+
+#lower:hover {
+  box-shadow: 4px 4px 0 #240b36;
+  transform: translate(-4px,-4px);
+}
+
+#lower:active {
+  box-shadow: #240b36 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+
+#scoreboard {
+  text-align: right;
+  color: black;
+  font-size: 34px;
+  font-weight: bold;
 }
