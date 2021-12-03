@@ -148,6 +148,16 @@ highBtn.addEventListener("click", function() {
     if (boFilms[b].value >= boFilms[a].value) {
         alert("Correct")
         scoreIncrease()
+        c = random()
+
+        title1.innerHTML=`<b>Title: </b>${boFilms[b].title}`
+        value1.innerHTML=`<b>Value: </b>${boFilms[b].value}`
+
+        title2.innerHTML=`<b>Title: </b>${boFilms[c].title}`
+        value2.innerHTML=`<b>Value: </b>${boFilms[c].value}`
+
+        boFilms[b].title=boFilms[c].title
+        boFilms[b].value=boFilms[c].value
     }
     else {
         alert("Incorrect")
@@ -158,6 +168,16 @@ lowBtn.addEventListener("click", function() {
     if (boFilms[b].value <= boFilms[a].value) {
         alert("Correct")
         scoreIncrease()
+        c=random()
+
+        title1.innerHTML=`<b>Title: </b>${boFilms[b].title}`
+        value1.innerHTML=`<b>Value: </b>${boFilms[b].value}`
+
+        title2.innerHTML=`<b>Title: </b>${boFilms[c].title}`
+        value2.innerHTML=`<b>Value: </b>${boFilms[c].value}`
+
+        boFilms[b].title=boFilms[c].title
+        boFilms[b].value=boFilms[c].value
     }
     else {
         alert("Incorrect")
