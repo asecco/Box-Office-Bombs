@@ -86,20 +86,18 @@ section {
 #column1 {
   width: 50%;
   min-height: 490px;
-  background-color: #b92b27;
 }
 
 #column2 {
   width: 50%;
-  background-color: #1565C0;
 }
 
 #higher {
   background-color: #fbeee0;
-  border: 2px solid #240b36;
+  border: 2px solid #ec2F4B;
   border-radius: 30px;
-  box-shadow: #240b36 4px 4px 0 0;
-  color: #240b36;
+  box-shadow: #ec2F4B 4px 4px 0 0;
+  color: #ec2F4B;
   cursor: pointer;
   font-size: 24px;
   font-weight: bold;
@@ -113,21 +111,21 @@ section {
 }
 
 #higher:hover {
-  box-shadow: 4px 4px 0 #240b36;
+  box-shadow: 4px 4px 0 #ec2F4B;
   transform: translate(-4px,-4px);
 }
 
 #higher:active {
-  box-shadow: #240b36 2px 2px 0 0;
+  box-shadow: #ec2F4B 2px 2px 0 0;
   transform: translate(2px, 2px);
 }
 
 #lower {
   background-color: #fbeee0;
-  border: 2px solid #240b36;
+  border: 2px solid #ec2F4B;
   border-radius: 30px;
-  box-shadow: #240b36 4px 4px 0 0;
-  color: #240b36;
+  box-shadow: #ec2F4B 4px 4px 0 0;
+  color: #ec2F4B;
   cursor: pointer;
   font-size: 24px;
   font-weight: bold;
@@ -140,12 +138,12 @@ section {
 }
 
 #lower:hover {
-  box-shadow: 4px 4px 0 #240b36;
+  box-shadow: 4px 4px 0 #ec2F4B;
   transform: translate(-4px,-4px);
 }
 
 #lower:active {
-  box-shadow: #240b36 2px 2px 0 0;
+  box-shadow: #ec2F4B 2px 2px 0 0;
   transform: translate(2px, 2px);
 }
 
