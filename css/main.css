@@ -77,8 +77,8 @@ section {
 
 #columns {
   text-align: center;
-  color: black;
-  font-size: 28px;
+  color: white;
+  font-size: 40px;
   font-weight: bold;
 }
 
@@ -150,7 +150,7 @@ section {
 
 #scoreboard {
   text-align: right;
-  color: black;
+  color: white;
   font-size: 34px;
   font-weight: bold;
 }
