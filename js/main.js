@@ -85,7 +85,7 @@ let boFilms = [
     },
     {
         "title": "Spider-Man: Homecoming (2017)",
-        "thumbnail": "https://images.hdqwalls.com/wallpapers/spiderman-homecoming-movie-poster-c1.jpg",
+        "thumbnail": "https://images.hdqwalls.com/download/spiderman-homecoming-2017-movie-qj-1280x720.jpg",
         "value": "$880,166,924"
     },
     {
@@ -171,7 +171,7 @@ value1.innerHTML=`${boFilms[a].value}`
 column1.style.backgroundImage="url(" + boFilms[a].thumbnail
 
 title2.innerHTML=`${boFilms[b].title}`
-value2.innerHTML=`${boFilms[b].value}`
+value2.innerHTML=`?`
 column2.style.backgroundImage="url(" + boFilms[b].thumbnail
 
 highBtn.addEventListener("click", function() {
@@ -185,7 +185,7 @@ highBtn.addEventListener("click", function() {
         column1.style.backgroundImage="url(" + boFilms[b].thumbnail
 
         title2.innerHTML=`${boFilms[c].title}`
-        value2.innerHTML=`${boFilms[c].value}`
+        value2.innerHTML=`?`
         column2.style.backgroundImage="url(" + boFilms[c].thumbnail
 
         boFilms[b].title=boFilms[c].title
@@ -208,7 +208,7 @@ lowBtn.addEventListener("click", function() {
         column1.style.backgroundImage="url(" + boFilms[b].thumbnail
 
         title2.innerHTML=`${boFilms[c].title}`
-        value2.innerHTML=`${boFilms[c].value}`
+        value2.innerHTML=`?`
         column2.style.backgroundImage="url(" + boFilms[c].thumbnail
 
         boFilms[b].title=boFilms[c].title

@@ -78,8 +78,9 @@ section {
 #columns {
   text-align: center;
   color: white;
-  font-size: 40px;
+  font-size: 50px;
   font-weight: bold;
+  text-shadow: black 0px 0px 10px;
 }
 
 #column1 {
