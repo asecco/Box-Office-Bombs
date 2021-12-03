@@ -1,6 +1,7 @@
 document.getElementById('playBtn').addEventListener('click', switchVisible);
 var div1 = document.getElementById('homepage'),
     div2 = document.getElementById('content');
+
 function switchVisible() {
   if(!div1) return;
   if (getComputedStyle(div1).display == 'block') {
@@ -140,7 +141,134 @@ let boFilms = [
         "thumbnail": "https://uhdwallpapers.org/uploads/converted/19/04/21/avengers-endgame-1280x720_898598-mm-90.jpg",
         "value": "$2,797,501,328"
     },
+    {
+        "title": "Wonder Woman (2017)",
+        "thumbnail": "https://images.hdqwalls.com/download/wonder-woman-2017-poster-img-1280x720.jpg",
+        "value": "$822,824,522"
+    },
+    {
+        "title": "Wrath of Man (2021)",
+        "thumbnail": "https://www.joblo.com/wp-content/uploads/2021/05/wrath-of-man-review-fb-1280x720.jpg",
+        "value": "$103,966,489"
+    },
+    {
+        "title": "X-Men: Dark Phoenix (2019)",
+        "thumbnail": "https://wallpapersmug.com/download/1280x720/9fdebe/x-men-dark-phoenix-2019-movie-new-poster.jpg",
+        "value": "$252,442,974"
+    },
+    {
+        "title": "Wonder Woman 1984 (2020)",
+        "thumbnail": "https://www.slashgear.com/wp-content/uploads/2020/11/WW84_main-1280x720.jpg",
+        "value": "$166,534,027"
+    },
+    {
+        "title": "Looper (2012)",
+        "thumbnail": "https://www.hollywoodinsider.com/wp-content/uploads/2021/06/Hollywood-Insider-Looper-Review-Rian-Johnson-Emily-Blunt-Joseph-Gordon-Levitt-Bruce-Willis-1280x720.png",
+        "value": "$176,506,819"
+    },
+    {
+        "title": "Interstellar (2014)",
+        "thumbnail": "https://filmgrab.files.wordpress.com/2015/04/3520.jpg",
+        "value": "$701,729,206"
+    },
+    {
+        "title": "John Wick (2014)",
+        "thumbnail": "https://images.mubicdn.net/images/film/116988/cache-98090-1573134324/image-w1280.jpg",
+        "value": "$86,081,711"
+    },
+    {
+        "title": "Logan (2017)",
+        "thumbnail": "https://images.hdqwalls.com/download/logan-2017-movie-qhd-1280x720.jpg",
+        "value": "$619,179,950"
+    },
+    {
+        "title": "The Martian (2015)",
+        "thumbnail": "https://images.squarespace-cdn.com/content/v1/5421c909e4b05e40bec89718/1473787628453-UQDT909XLE0H14L0WNQG/image-asset.jpeg",
+        "value": "$630,162,448"
+    },
+    {
+        "title": "Skyfall (2012)",
+        "thumbnail": "https://www.desktopbackground.org/download/1280x720/2011/10/21/284261_james-bond-skyfall-007-wallpapers-2012_1920x1080_h.jpg",
+        "value": "$1,108,569,499"
+    },
+    {
+        "title": "Inception (2010)",
+        "thumbnail": "https://i0.wp.com/lylesmoviefiles.com/wp-content/uploads/2016/01/inception-movie-poster.jpg?fit=800%2C500&ssl=1&resize=1280%2C720",
+        "value": "$836,836,967"
+    },
+    {
+        "title": "Baby Driver (2017)",
+        "thumbnail": "https://geekireland.com/wp-content/uploads/2017/06/Babydriver-2.jpg",
+        "value": "$226,945,087"
+    },
+    {
+        "title": "Good Will Hunting (1997)",
+        "thumbnail": "https://images.mubicdn.net/images/film/3384/cache-41494-1574090284/image-w1280.jpg",
+        "value": "$225,933,435"
+    },
+    {
+        "title": "Prisoners (2013)",
+        "thumbnail": "https://m.media-amazon.com/images/M/MV5BYTI2MDkwNzMtNTdkMy00NjY5LTlkZWYtMDVjMWFjYjc3OTdhL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyNDAxOTExNTM@._V1_.jpg",
+        "value": "$122,126,687"
+    },
+    {
+        "title": "John Carter (2012)",
+        "thumbnail": "https://www.flixwatch.co/wp-content/uploads/70143369.jpg.webp",
+        "value": "$284,139,100"
+    },
+    {
+        "title": "Joker (2019)",
+        "thumbnail": "https://images.hdqwalls.com/download/joker-2019-76-1280x720.jpg",
+        "value": "$1,074,419,384"
+    },
+    {
+        "title": "Black Panther (2018)",
+        "thumbnail": "https://images.hdqwalls.com/download/black-panther-movie-2018-poster-ln-1280x720.jpg",
+        "value": "$1,347,597,973"
+    },
+    {
+        "title": "Twilight (2008)",
+        "thumbnail": "https://www.teahub.io/photos/full/257-2574410_twilight-movie.jpg",
+        "value": "$408,430,415"
+    },
+    {
+        "title": "The Wolf of Wall Street (2013)",
+        "thumbnail": "https://www.flixwatch.co/wp-content/uploads/70266676.jpg",
+        "value": "$392,000,694"
+    },
+    {
+        "title": "Harry Potter and the Sorcerer's Stone (2001)",
+        "thumbnail": "https://images.squarespace-cdn.com/content/v1/57c722efff7c50b25c96784d/1591450781924-STA0L8KUX4NHZWKZXZTL/image-asset.jpeg",
+        "value": "$1,012,660,091"
+    },
+    {
+        "title": "Avatar (2009)",
+        "thumbnail": "https://i.ytimg.com/vi/52c_ZH7ufJ8/maxresdefault.jpg",
+        "value": "$2,847,246,203"
+    },
+    {
+        "title": "Harry Potter and the Deathly Hallows: Part 2 (2011)",
+        "thumbnail": "https://image.tmdb.org/t/p/w1280/icfcFCxyKTUqTmVYJbiBwLKnb1O.jpg",
+        "value": "$1,342,321,665"
+    },
+    {
+        "title": "Jurassic World (2015)",
+        "thumbnail": "https://www.bhmpics.com/download/jurassic_world_2016-1280x720.jpg",
+        "value": "$1,670,516,444"
+    },
+    {
+        "title": "The Social Network (2010)",
+        "thumbnail": "https://occ-0-1723-1722.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABbx6svlK001C7D3g4XvJPaMHdud1Epcuje6MEuanQmkgHDkgXoKRz6O1EH_MEqv5Vf8dPRif33U0D3PYyZsAoFCmsKGR.jpg?r=18d",
+        "value": "$224,920,375"
+    },
+    {
+        "title": "Fast Five (2011)",
+        "thumbnail": "https://wallpapers.gg/wp-content/uploads/2017/12/Fast-Five-2011-HD-1280x720.jpg",
+        "value": "$626,137,675"
+    },
 ]
+
+// Script
 
 let title1=document.getElementById("title1")
 let value1=document.getElementById("value1")
@@ -154,16 +282,14 @@ let lowBtn = document.getElementById("lower")
 let column1 = document.getElementById("column1")
 let column2 = document.getElementById("column2")
 
-var score = 0;
-var scoreboard = document.getElementById("scoreboard");
+let score = 0;
+let scoreboard = document.getElementById("scoreboard");
 
 a = random()
 b = random()
-if (a == b && b !== 25) a = b + 1
-else a = b - 1
 
 function random() {
-    r = Math.floor(Math.random()*25)
+    r = Math.floor(Math.random()*50)
     return r
 }
 random(1)
@@ -203,7 +329,7 @@ lowBtn.addEventListener("click", function() {
     if (boFilms[b].value <= boFilms[a].value) {
         alert("Correct")
         scoreIncrease()
-        c=random()
+        c = random()
 
         title1.innerHTML=`${boFilms[b].title}`
         value1.innerHTML=`${boFilms[b].value}`
