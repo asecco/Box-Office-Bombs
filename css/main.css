@@ -187,3 +187,76 @@ section {
   position: relative;
   top: -35%;
 }
+
+#lose {
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgb(0,0,0);
+	background-color: rgba(0,0,0,0.4);
+}
+
+.lose-content {
+  background-color: #ec2F4B;
+  margin: 5% auto;
+  padding: 20px;
+  border: 4px solid white;
+  width: 25%;
+  text-align: center;
+}
+    
+.close {
+  color: white;
+  float: right;
+  font-size: 35px;
+  font-weight: bold;
+}
+    
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#embarrassing {
+  height: 50%;
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#playAgain {
+  background-color: #fbeee0;
+  border: 2px solid black;
+  border-radius: 30px;
+  box-shadow: black 4px 4px 0 0;
+  color: #ec2F4B;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  width: 125px;
+  height: 55px;
+}
+
+#playAgain:hover {
+  box-shadow: 4px 4px 0 black;
+  transform: translate(-4px,-4px);
+}
+
+#playAgain:active {
+  box-shadow: black 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+
+#scoreboard2 {
+  text-align: right;
+  color: white;
+  font-size: 34px;
+  font-weight: bold;
+}

@@ -268,6 +268,20 @@ let boFilms = [
     },
 ]
 
+let lose = document.getElementById("lose");
+let span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() {
+  lose.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == lose) {
+    lose.style.display = "none";
+  }
+}
+
+
 // Script
 
 let title1 = document.getElementById("title1");
@@ -284,6 +298,7 @@ let column2 = document.getElementById("column2");
 
 let score = 0;
 let scoreboard = document.getElementById("scoreboard");
+let scoreboard2 = document.getElementById("scoreboard2")
 
 a = random();
 b = random();
@@ -324,6 +339,8 @@ highBtn.addEventListener("click", function() {
     }
     else {
         alert("Incorrect")
+        lose.style.display = "block";
+        scoreboard2.innerHTML = "You Scored: " + score;
     }
 })
 
@@ -349,6 +366,8 @@ lowBtn.addEventListener("click", function() {
     }
     else {
         alert("Incorrect")
+        lose.style.display = "block";
+        scoreboard2.innerHTML = "You Scored: " + score;
     }
 })
 
