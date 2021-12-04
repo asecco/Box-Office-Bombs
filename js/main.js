@@ -295,7 +295,7 @@ function random() {
 random(1)
 
 title1.innerHTML=`${boFilms[a].title}`
-value1.innerHTML=`${boFilms[a].value}`
+value1.innerHTML=`$${boFilms[a].value.toLocaleString()}`
 column1.style.backgroundImage="url(" + boFilms[a].thumbnail
 
 title2.innerHTML=`${boFilms[b].title}`
@@ -309,7 +309,7 @@ highBtn.addEventListener("click", function() {
         c = random()
 
         title1.innerHTML=`${boFilms[b].title}`
-        value1.innerHTML=`${boFilms[b].value}`
+        value1.innerHTML=`$${boFilms[b].value.toLocaleString()}`
         column1.style.backgroundImage="url(" + boFilms[b].thumbnail
 
         title2.innerHTML=`${boFilms[c].title}`
@@ -334,7 +334,7 @@ lowBtn.addEventListener("click", function() {
         c = random()
 
         title1.innerHTML=`${boFilms[b].title}`
-        value1.innerHTML=`${boFilms[b].value}`
+        value1.innerHTML=`$${boFilms[b].value.toLocaleString()}`
         column1.style.backgroundImage="url(" + boFilms[b].thumbnail
 
         title2.innerHTML=`${boFilms[c].title}`
