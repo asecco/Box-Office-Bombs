@@ -273,8 +273,7 @@ let lose = document.getElementById("lose");
 document.getElementById('playAgain').addEventListener('click', reloadGame);
 
 function reloadGame() {
-    window.location.href = window.location.href
-    switchVisible()
+    window.location.href = window.location.href;
 }
 
 // Script
