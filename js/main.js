@@ -269,18 +269,13 @@ let boFilms = [
 ]
 
 let lose = document.getElementById("lose");
-let span = document.getElementsByClassName("close")[0];
 
-span.onclick = function() {
-  lose.style.display = "none";
+document.getElementById('playAgain').addEventListener('click', reloadGame);
+
+function reloadGame() {
+    window.location.href = window.location.href
+    switchVisible()
 }
-
-window.onclick = function(event) {
-  if (event.target == lose) {
-    lose.style.display = "none";
-  }
-}
-
 
 // Script
 
@@ -298,7 +293,7 @@ let column2 = document.getElementById("column2");
 
 let score = 0;
 let scoreboard = document.getElementById("scoreboard");
-let scoreboard2 = document.getElementById("scoreboard2")
+let scoreboardLose = document.getElementById("scoreboard2")
 
 a = random();
 b = random();
@@ -313,13 +308,14 @@ title1.innerHTML = `${boFilms[a].title}`
 value1.innerHTML = `$${boFilms[a].value.toLocaleString()}`
 column1.style.backgroundImage = "url(" + boFilms[a].thumbnail
 
+lose.style.display = "none";
+
 title2.innerHTML = `${boFilms[b].title}`
 value2.innerHTML = `?`
 column2.style.backgroundImage = "url(" + boFilms[b].thumbnail
 
 highBtn.addEventListener("click", function() {
     if (boFilms[b].value >= boFilms[a].value) {
-        alert("Correct")
         scoreIncrease()
         c = random()
 
@@ -338,15 +334,13 @@ highBtn.addEventListener("click", function() {
         boFilms[b].thumbnail = boFilms[c].thumbnail
     }
     else {
-        alert("Incorrect")
         lose.style.display = "block";
-        scoreboard2.innerHTML = "You Scored: " + score;
+        scoreboardLose.innerHTML = "You Scored: " + score;
     }
 })
 
 lowBtn.addEventListener("click", function() {
     if (boFilms[b].value <= boFilms[a].value) {
-        alert("Correct")
         scoreIncrease()
         c = random()
 
@@ -365,9 +359,8 @@ lowBtn.addEventListener("click", function() {
         boFilms[b].thumbnail = boFilms[c].thumbnail
     }
     else {
-        alert("Incorrect")
         lose.style.display = "block";
-        scoreboard2.innerHTML = "You Scored: " + score;
+        scoreboardLose.innerHTML = "You Scored: " + score;
     }
 })
 

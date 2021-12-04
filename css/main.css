@@ -172,11 +172,12 @@ section {
 .disc {
   width: 2em;
   height: 2em;
+  border: 2px solid black;
   border-radius: 50%;
   background-color: #ec2F4B;
   position: absolute;
   top: 52%;
-  right: 47.5%;
+  right: 47.3%;
   color: white;
   font-size: 50px;
   font-weight: bold;
@@ -255,8 +256,15 @@ section {
 }
 
 #scoreboard2 {
-  text-align: right;
+  text-align: center;
   color: white;
-  font-size: 34px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#loseheader {
+  color: white;
+  text-align: center;
+  font-size: 32px;
   font-weight: bold;
 }
