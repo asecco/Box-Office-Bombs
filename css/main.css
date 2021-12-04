@@ -1,7 +1,7 @@
 html {
     background: linear-gradient(-45deg, #009FFF, #ec2F4B);
     background-size: 500% 500%;
-    animation: gradient 10s ease infinite;
+    animation: gradient 12s ease infinite;
     font-family: "Poppins", sans-serif;
 }
 
@@ -88,19 +88,23 @@ section {
   min-height: 490px;
   position: relative;
   transition: all .25s;
+  border: 1px solid black;
 }
 
 #column2 {
   width: 50%;
   transition: all .25s;
+  border: 1px solid black;
 }
 
 #column1:hover {
   transform: scale(1.01);
+  border: 2px solid #ec2F4B;
 }
 
 #column2:hover {
   transform: scale(1.01);
+  border: 2px solid #ec2F4B;
 }
 
 #higher {
