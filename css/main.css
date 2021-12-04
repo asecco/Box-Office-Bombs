@@ -86,6 +86,7 @@ section {
 #column1 {
   width: 50%;
   min-height: 490px;
+  position: relative;
 }
 
 #column2 {
@@ -152,4 +153,20 @@ section {
   color: white;
   font-size: 34px;
   font-weight: bold;
+}
+
+.disc {
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  background-color: #ec2F4B;
+  position: absolute;
+  top: 50%;
+  right: -1em;
+  transform: translateY(-50%);
+}
+
+#vs {
+  position: relative;
+  top: -35%;
 }

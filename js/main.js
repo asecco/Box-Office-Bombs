@@ -270,37 +270,37 @@ let boFilms = [
 
 // Script
 
-let title1=document.getElementById("title1")
-let value1=document.getElementById("value1")
+let title1 = document.getElementById("title1");
+let value1 = document.getElementById("value1");
 
-let title2=document.getElementById("title2")
-let value2=document.getElementById("value2")
+let title2 = document.getElementById("title2");
+let value2 = document.getElementById("value2");
 
-let highBtn = document.getElementById("higher")
-let lowBtn = document.getElementById("lower")
+let highBtn = document.getElementById("higher");
+let lowBtn = document.getElementById("lower");
 
-let column1 = document.getElementById("column1")
-let column2 = document.getElementById("column2")
+let column1 = document.getElementById("column1");
+let column2 = document.getElementById("column2");
 
 let score = 0;
 let scoreboard = document.getElementById("scoreboard");
 
-a = random()
-b = random()
+a = random();
+b = random();
 
 function random() {
     r = Math.floor(Math.random()*50)
     return r
 }
-random(1)
+random(2)
 
-title1.innerHTML=`${boFilms[a].title}`
-value1.innerHTML=`$${boFilms[a].value.toLocaleString()}`
-column1.style.backgroundImage="url(" + boFilms[a].thumbnail
+title1.innerHTML = `${boFilms[a].title}`
+value1.innerHTML = `$${boFilms[a].value.toLocaleString()}`
+column1.style.backgroundImage = "url(" + boFilms[a].thumbnail
 
-title2.innerHTML=`${boFilms[b].title}`
-value2.innerHTML=`?`
-column2.style.backgroundImage="url(" + boFilms[b].thumbnail
+title2.innerHTML = `${boFilms[b].title}`
+value2.innerHTML = `?`
+column2.style.backgroundImage = "url(" + boFilms[b].thumbnail
 
 highBtn.addEventListener("click", function() {
     if (boFilms[b].value >= boFilms[a].value) {
@@ -308,19 +308,19 @@ highBtn.addEventListener("click", function() {
         scoreIncrease()
         c = random()
 
-        title1.innerHTML=`${boFilms[b].title}`
-        value1.innerHTML=`$${boFilms[b].value.toLocaleString()}`
-        column1.style.backgroundImage="url(" + boFilms[b].thumbnail
+        title1.innerHTML = `${boFilms[b].title}`
+        value1.innerHTML = `$${boFilms[b].value.toLocaleString()}`
+        column1.style.backgroundImage = "url(" + boFilms[b].thumbnail
 
-        title2.innerHTML=`${boFilms[c].title}`
-        value2.innerHTML=`?`
-        column2.style.backgroundImage="url(" + boFilms[c].thumbnail
+        title2.innerHTML = `${boFilms[c].title}`
+        value2.innerHTML = `?`
+        column2.style.backgroundImage = "url(" + boFilms[c].thumbnail
 
-        boFilms[a].value=boFilms[b].value
+        boFilms[a].value = boFilms[b].value
 
-        boFilms[b].title=boFilms[c].title
-        boFilms[b].value=boFilms[c].value
-        boFilms[b].thumbnail=boFilms[c].thumbnail
+        boFilms[b].title = boFilms[c].title
+        boFilms[b].value = boFilms[c].value
+        boFilms[b].thumbnail = boFilms[c].thumbnail
     }
     else {
         alert("Incorrect")
@@ -333,19 +333,19 @@ lowBtn.addEventListener("click", function() {
         scoreIncrease()
         c = random()
 
-        title1.innerHTML=`${boFilms[b].title}`
-        value1.innerHTML=`$${boFilms[b].value.toLocaleString()}`
-        column1.style.backgroundImage="url(" + boFilms[b].thumbnail
+        title1.innerHTML = `${boFilms[b].title}`
+        value1.innerHTML = `$${boFilms[b].value.toLocaleString()}`
+        column1.style.backgroundImage = "url(" + boFilms[b].thumbnail
 
-        title2.innerHTML=`${boFilms[c].title}`
-        value2.innerHTML=`?`
-        column2.style.backgroundImage="url(" + boFilms[c].thumbnail
+        title2.innerHTML = `${boFilms[c].title}`
+        value2.innerHTML = `?`
+        column2.style.backgroundImage = "url(" + boFilms[c].thumbnail
 
-        boFilms[a].value=boFilms[b].value
+        boFilms[a].value = boFilms[b].value
 
-        boFilms[b].title=boFilms[c].title
-        boFilms[b].value=boFilms[c].value
-        boFilms[b].thumbnail=boFilms[c].thumbnail
+        boFilms[b].title = boFilms[c].title
+        boFilms[b].value = boFilms[c].value
+        boFilms[b].thumbnail = boFilms[c].thumbnail
     }
     else {
         alert("Incorrect")
