@@ -44,10 +44,10 @@ html {
 
 #playBtn {
   background-color: #fbeee0;
-  border: 2px solid #240b36;
+  border: 2px solid #ec2F4B;
   border-radius: 30px;
-  box-shadow: #240b36 4px 4px 0 0;
-  color: #240b36;
+  box-shadow: #ec2F4B 4px 4px 0 0;
+  color: #ec2F4B;
   cursor: pointer;
   font-size: 24px;
   font-weight: bold;
@@ -60,7 +60,7 @@ html {
 }
 
 #playBtn:hover {
-  box-shadow: 4px 4px 0 #240b36;
+  box-shadow: 4px 4px 0 #ec2F4B;
   transform: translate(-4px,-4px);
 }
 
@@ -87,10 +87,20 @@ section {
   width: 50%;
   min-height: 490px;
   position: relative;
+  transition: all .25s;
 }
 
 #column2 {
   width: 50%;
+  transition: all .25s;
+}
+
+#column1:hover {
+  transform: scale(1.01);
+}
+
+#column2:hover {
+  transform: scale(1.01);
 }
 
 #higher {
@@ -161,9 +171,12 @@ section {
   border-radius: 50%;
   background-color: #ec2F4B;
   position: absolute;
-  top: 50%;
-  right: -1em;
-  transform: translateY(-50%);
+  top: 52%;
+  right: 47.5%;
+  color: white;
+  font-size: 50px;
+  font-weight: bold;
+  text-shadow: black 0px 0px 10px;
 }
 
 #vs {
