@@ -1,15 +1,15 @@
-document.getElementById('playBtn').addEventListener('click', switchVisible);
-var div1 = document.getElementById('homepage'),
-    div2 = document.getElementById('content');
+document.getElementById("playBtn").addEventListener("click", switchVisible);
+let div1 = document.getElementById("homepage"),
+    div2 = document.getElementById("content");
 
 function switchVisible() {
   if(!div1) return;
-  if (getComputedStyle(div1).display == 'block') {
-    div1.style.display = 'none';
-    div2.style.display = 'block';
+  if (getComputedStyle(div1).display == "block") {
+    div1.style.display = "none";
+    div2.style.display = "block";
   } else {
-    div1.style.display = 'block';
-    div2.style.display = 'none';
+    div1.style.display = "block";
+    div2.style.display = "none";
   }
 }
 
@@ -270,7 +270,7 @@ let boFilms = [
 
 let lose = document.getElementById("lose");
 
-document.getElementById('playAgain').addEventListener('click', reloadGame);
+document.getElementById("playAgain").addEventListener("click", reloadGame);
 
 function reloadGame() {
     window.location.href = window.location.href;
@@ -292,7 +292,7 @@ let column2 = document.getElementById("column2");
 
 let score = 0;
 let scoreboard = document.getElementById("scoreboard");
-let scoreboardLose = document.getElementById("scoreboard2")
+let scoreboardLose = document.getElementById("scoreboard2");
 
 a = random();
 b = random();
