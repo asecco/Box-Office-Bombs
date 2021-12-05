@@ -37,6 +37,7 @@ html {
   color: white;
   font-size: 38px;
   font-weight: bold;
+  text-shadow: black 0px 0px 10px;
   line-height: 125px;
 }
 
@@ -51,13 +52,15 @@ html {
   box-shadow: #ec2F4B 4px 4px 0 0;
   color: #ec2F4B;
   cursor: pointer;
-  font-size: 24px;
+  font-size: 32px;
   font-weight: bold;
   padding: 0 50px;
   line-height: 50px;
   text-decoration: none;
   top: 50%;
   left: 46%;
+  width: 180px;
+  height: 80px;
 }
 
 #playBtn:hover {
