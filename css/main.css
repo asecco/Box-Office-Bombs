@@ -307,3 +307,24 @@ section {
 #linkedin:hover {
   color: #4099FF;
 }
+
+.navbar {
+  width: 90px;
+  position: fixed;
+  top: 0px;
+  text-shadow: black 0px 0px 10px;
+}
+
+.navbar a {
+  display: block;
+  text-align: center;
+  padding: 15px;
+  transition: all .5s ease;
+  color: white;
+  font-size: 38px;
+}
+
+.navbar a:hover {
+  background-color: #4099FF;
+  border-radius: 50%;
+}
