@@ -328,3 +328,57 @@ section {
   background-color: #4099FF;
   border-radius: 50%;
 }
+
+.card {
+  position: relative;
+  margin: 60px auto;
+  width: 450px;
+  padding: 25px;
+  box-shadow: 5px 5px 20px black;
+  transition: transform .25s;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.cardinfo {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.cardname h1 {
+  color: black;
+  font-size: 38px;
+  font-weight: bold;
+  margin-top: 0px;
+  margin-bottom: -10px;
+}
+
+.cardname h2 {
+  color: black;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.cardlinks a {
+  text-decoration: none;
+  color: black;
+  margin-left: 10px;
+}
+
+.cardlinks a:hover {
+  color: #ec2F4B;
+}
+
+.cardimage {
+  border-radius: 3px;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  background-image: linear-gradient(to top, #f0acdd 0%, #98b6e9 100%);
+  border-bottom-left-radius: 170px;
+}
