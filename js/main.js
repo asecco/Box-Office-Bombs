@@ -13,7 +13,7 @@ function switchVisible() {
   }
 }
 
-// Database of Films - values from https://www.boxofficemojo.com
+// Database of Films - values from https://www.boxofficemojo.com as of 12/05/21
 
 let boFilms = [
     {
@@ -266,6 +266,131 @@ let boFilms = [
         "thumbnail": "https://wallpapers.gg/wp-content/uploads/2017/12/Fast-Five-2011-HD-1280x720.jpg",
         "value": 626137675
     },
+    {
+        "title": "Boyhood (2014)",
+        "thumbnail": "https://aws.boxofficebuz.com/articles/2015/02/24/boyhood.jpg",
+        "value": 48137666
+    },
+    {
+        "title": "Moonlight (2016)",
+        "thumbnail": "https://hbomax-images.warnermediacdn.com/images/GYF41gQTSdm6-wgEAAAMR/tileburnedin?size=1280x720&partner=hbomaxcom&v=06e1e9c3177866e1222ffcb9514fe960&host=artist.api.cdn.hbo.com&w=1280",
+        "value": 65336603
+    },
+    {
+        "title": "Get Out (2017)",
+        "thumbnail": "https://i2.wp.com/horrormoviezonline.com/wp-content/uploads/2017/05/get-out-full-movie.jpg?resize=1280%2C720",
+        "value": 255589157
+    },
+    {
+        "title": "The Shawshank Redemption (1994)",
+        "thumbnail": "https://eskipaper.com/images/the-shawshank-redemption-7.jpg",
+        "value": 28817291
+    },
+    {
+        "title": "Pulp Fiction (1994)",
+        "thumbnail": "https://www.newstatesman.com/wp-content/uploads/sites/2/2021/06/pulpfiction.jpeg",
+        "value": 213928762
+    },
+    {
+        "title": "Fight Club (1999)",
+        "thumbnail": "https://wallpapers.gg/wp-content/uploads/2017/12/Fight-Club-1999-HD-1280x720.jpg",
+        "value": 101209702
+    },
+    {
+        "title": "Forrest Gump (1994)",
+        "thumbnail": "https://i.ytimg.com/vi/iIPvRv48leg/maxresdefault.jpg",
+        "value": 678226133
+    },
+    {
+        "title": "13 Hours (2016)",
+        "thumbnail": "https://2l7g9kgsh281akevs49v281d-wpengine.netdna-ssl.com/wp-content/uploads/2016/01/maxresdefault12-1132x670.jpg",
+        "value": 69411370
+    },
+    {
+        "title": "The Godfather (1972)",
+        "thumbnail": "https://assets.mubicdn.net/images/film/488/image-w1280.jpg?1543371300",
+        "value": 246120986
+    },
+    {
+        "title": "The Matrix (1999)",
+        "thumbnail": "http://1.bp.blogspot.com/-FqQHlGtFLI8/UX6xjH1O_fI/AAAAAAAAGhg/DQrT2HgWrVo/s1600/the-matrix-original.jpg",
+        "value": 466364845
+    },
+    {
+        "title": "The Silence of the Lambs (1991)",
+        "thumbnail": "https://www.joblo.com/wp-content/uploads/2017/05/hannibal-z1-1280x720.jpg",
+        "value": 272742922
+    },
+    {
+        "title": "Psycho (1960)",
+        "thumbnail": "https://www.filmcompanion.in/wp-content/uploads/2020/06/film-companion-psycho-lead-image3-1280x720.jpg",
+        "value": 32041845
+    },
+    {
+        "title": "The Departed (2006)",
+        "thumbnail": "https://hbomax-images.warnermediacdn.com/images/GXtlhUA0zrsJHjQEAAAfz/tileburnedin?size=1280x720&partner=hbomaxcom&v=ef3784e4777f88b8edd2d513981ed09a&host=artist.api.cdn.hbo.com&w=1280",
+        "value": 291465373
+    },
+    {
+        "title": "Reservoir Dogs (1992)",
+        "thumbnail": "https://media.newyorker.com/photos/59d798fb5b388b33d3b0c419/16:9/w_1280,c_limit/Shone-Reservoir-Dogs.jpg",
+        "value": 2913644
+    },
+    {
+        "title": "Saving Private Ryan (1998)",
+        "thumbnail": "https://classicmovietreasures.com/wp-content/uploads/saving-private-ryan-1998.jpg",
+        "value": 482349603
+    },
+    {
+        "title": "Toy Story (1995)",
+        "thumbnail": "https://images.theabcdn.com/i/33933058",
+        "value": 394436586
+    },
+    {
+        "title": "Die Hard (1988)",
+        "thumbnail": "https://thedisinsider.com/wp-content/uploads/2021/07/4B215081-4000-488A-A7C4-F78D017DA7E3.jpeg",
+        "value": 141603197
+    },
+    {
+        "title": "Ocean's Eleven (2001)",
+        "thumbnail": "https://img.vxdn.net/c-max/1280/oceans-eleven-4591.jpg",
+        "value": 450717150
+    },
+    {
+        "title": "No Country for Old Men (2007)",
+        "thumbnail": "https://assets.mubicdn.net/images/film/117/image-w1280.jpg?1559332906",
+        "value": 171627166
+    },
+    {
+        "title": "Hacksaw Ridge (2016)",
+        "thumbnail": "https://images.mubicdn.net/images/film/133824/cache-119871-1591082724/image-w1280.jpg",
+        "value": 180563636
+    },
+    {
+        "title": "Black Hawk Down (2001)",
+        "thumbnail": "https://hbomax-images.warnermediacdn.com/images/GYRweKAEDH7HDCAEAAAZ7/tileburnedin?size=1280x720&partner=hbomaxcom&v=fae4707adcc92440ca9e9bd6e818997c&host=artist.api.cdn.hbo.com&w=1280",
+        "value": 172989651
+    },
+    {
+        "title": "Grown Ups (2010)",
+        "thumbnail": "https://images.mubicdn.net/images/film/27236/cache-33096-1445893542/image-w1280.jpg",
+        "value": 271457301
+    },
+    {
+        "title": "Game Night (2018)",
+        "thumbnail": "https://images.hdqwalls.com/download/game-night-2018-zl-1280x720.jpg",
+        "value": 117679066
+    },
+    {
+        "title": "The Hitman's Bodyguard (2017)",
+        "thumbnail": "https://assets1.ignimgs.com/2017/07/31/hitmans-bodyguard-thumb1-1501525997945_160w.jpg?width=1280",
+        "value": 176600207
+    },
+    {
+        "title": "A Quiet Place (2018)",
+        "thumbnail": "https://images.mubicdn.net/images/film/172797/cache-280546-1581033411/image-w1280.jpg",
+        "value": 340952971
+    },
 ]
 
 let lose = document.getElementById("lose");
@@ -298,7 +423,7 @@ a = random();
 b = random();
 
 function random() {
-    r = Math.floor(Math.random()*50)
+    r = Math.floor(Math.random()*75)
     return r
 }
 random(1)
