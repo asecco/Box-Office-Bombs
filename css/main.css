@@ -168,6 +168,7 @@ section {
   color: white;
   font-size: 34px;
   font-weight: bold;
+  text-shadow: black 0px 0px 10px;
 }
 
 .disc {
@@ -177,7 +178,7 @@ section {
   border-radius: 50%;
   background-color: #ec2F4B;
   position: absolute;
-  top: 52%;
+  top: 54%;
   right: 47.3%;
   color: white;
   font-size: 50px;
@@ -247,6 +248,7 @@ section {
   color: white;
   font-size: 24px;
   font-weight: bold;
+  text-shadow: black 0px 0px 10px;
 }
 
 #loseheader {
@@ -254,6 +256,7 @@ section {
   text-align: center;
   font-size: 32px;
   font-weight: bold;
+  text-shadow: black 0px 0px 10px;
 }
 
 #footer {
