@@ -460,6 +460,7 @@ highBtn.addEventListener("click", function() {
     else {
         lose.style.display = "block";
         scoreboardLose.innerHTML = "You Scored: " + score;
+        value2.innerHTML = `$${boFilms[b].value.toLocaleString()}`
     }
 })
 
@@ -485,6 +486,7 @@ lowBtn.addEventListener("click", function() {
     else {
         lose.style.display = "block";
         scoreboardLose.innerHTML = "You Scored: " + score;
+        value2.innerHTML = `$${boFilms[b].value.toLocaleString()}`
     }
 })
 
