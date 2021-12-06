@@ -31,8 +31,10 @@
         top: 48%;
         left: 41%;
         font-size: 40px;
+        display: none;
     }
     #vs {
+        display: none;
         top: -63%;
     }
     .lose-content {
