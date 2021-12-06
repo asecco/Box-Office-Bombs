@@ -426,7 +426,6 @@ function random() {
     r = Math.floor(Math.random()*75)
     return r
 }
-random(1)
 
 title1.innerHTML = `${boFilms[a].title}`
 value1.innerHTML = `$${boFilms[a].value.toLocaleString()}`

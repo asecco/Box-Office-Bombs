@@ -216,6 +216,14 @@ section {
   text-align: center;
 }
 
+#loseheader {
+  color: white;
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  text-shadow: black 0px 0px 10px;
+}
+
 #embarrassing {
   height: 50%;
   width: 50%;
@@ -251,14 +259,6 @@ section {
   text-align: center;
   color: white;
   font-size: 24px;
-  font-weight: bold;
-  text-shadow: black 0px 0px 10px;
-}
-
-#loseheader {
-  color: white;
-  text-align: center;
-  font-size: 32px;
   font-weight: bold;
   text-shadow: black 0px 0px 10px;
 }
@@ -313,6 +313,7 @@ section {
   width: 90px;
   position: fixed;
   top: 0px;
+  left: 0px;
   text-shadow: black 0px 0px 10px;
 }
 

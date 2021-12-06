@@ -1,0 +1,59 @@
+@media (max-width: 480px) {
+    html {
+        background-image: linear-gradient(-45deg, rgba(0, 159, 255, 0.45), rgba(236, 47, 75, 0.5));
+        background-size: 150% 150%;
+    }
+    .logo {
+        left: 20%;
+        width: 65%;
+    }
+    #instructions {
+        font-size: 24px;
+        line-height: 60px;
+    }
+    #title1 {
+        font-size: 25px;
+    }
+    #value1 {
+        font-size: 25px;
+        padding-top: 50px;
+    }
+    #title2 {
+        font-size: 25px;
+    }
+    #value2 {
+        font-size: 25px;
+        padding-top: 50px;
+    }
+    .disc {
+        width: 1.5em;
+        height: 1.5em;
+        top: 48%;
+        right: 42%;
+        font-size: 40px;
+    }
+    #vs {
+        top: -63%;
+    }
+    .lose-content {
+        width: 70%;
+        margin-top: 150px;
+    }
+    #embarrassing {
+        width: 75%;
+        height: 75%;
+    }
+    #scoreboard {
+        font-size: 28px;
+    }
+    .card {
+        width: 300px;
+    }
+    .cardname h1 {
+        font-size: 34px;
+    }
+    .cardimage {
+        width: 85px;
+        height: 85px;
+    }
+}
