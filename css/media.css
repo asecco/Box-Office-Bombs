@@ -16,20 +16,20 @@
     }
     #value1 {
         font-size: 25px;
-        padding-top: 50px;
+        padding-top: 70px;
     }
     #title2 {
         font-size: 25px;
     }
     #value2 {
         font-size: 25px;
-        padding-top: 50px;
+        padding-top: 70px;
     }
     .disc {
         width: 1.5em;
         height: 1.5em;
         top: 48%;
-        right: 42%;
+        left: 41%;
         font-size: 40px;
     }
     #vs {
@@ -53,8 +53,21 @@
         font-size: 34px;
     }
     .cardimage {
-        width: 85px;
-        height: 85px;
+        width: 75px;
+        height: 75px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .disc {
+        width: 2em;
+        height: 2em;
+        top: 28%;
+        left: 46%;
+        font-size: 40px;
+    }
+    #vs {
+        top: -40%;
     }
 }
 
