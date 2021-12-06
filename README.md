@@ -6,4 +6,6 @@ Have you ever been curious about how much money certain films have generated in 
 
 ![2](https://user-images.githubusercontent.com/40510223/144789379-7f2b8909-0d49-4c2d-9c94-60c172777db3.png)
 
+![4](https://user-images.githubusercontent.com/40510223/144792927-70f76764-488d-40ea-b1b0-b563800a2a58.png)
+
 ![3](https://user-images.githubusercontent.com/40510223/144789388-27cfe16b-7851-4173-bf5a-41f2858c7722.png)
