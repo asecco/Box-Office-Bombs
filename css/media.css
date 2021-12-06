@@ -57,3 +57,12 @@
         height: 85px;
     }
 }
+
+@media (max-width: 1500px) {
+    .disc {
+        right: 46.5%;
+    }
+    #scoreboard {
+        font-size: 30px;
+    }
+}
