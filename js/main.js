@@ -429,13 +429,13 @@ function random() {
 
 title1.innerHTML = `${boFilms[a].title}`
 value1.innerHTML = `$${boFilms[a].value.toLocaleString()}`
-column1.style.backgroundImage = "url(" + boFilms[a].thumbnail
+//column1.style.backgroundImage = "url(" + boFilms[a].thumbnail
 
 lose.style.display = "none";
 
 title2.innerHTML = `${boFilms[b].title}`
 value2.innerHTML = `?`
-column2.style.backgroundImage = "url(" + boFilms[b].thumbnail
+//column2.style.backgroundImage = "url(" + boFilms[b].thumbnail
 
 highBtn.addEventListener("click", function() {
     if (boFilms[b].value >= boFilms[a].value) {
@@ -444,17 +444,17 @@ highBtn.addEventListener("click", function() {
 
         title1.innerHTML = `${boFilms[b].title}`
         value1.innerHTML = `$${boFilms[b].value.toLocaleString()}`
-        column1.style.backgroundImage = "url(" + boFilms[b].thumbnail
+        //column1.style.backgroundImage = "url(" + boFilms[b].thumbnail
 
         title2.innerHTML = `${boFilms[c].title}`
         value2.innerHTML = `?`
-        column2.style.backgroundImage = "url(" + boFilms[c].thumbnail
+        //column2.style.backgroundImage = "url(" + boFilms[c].thumbnail
 
         boFilms[a].value = boFilms[b].value
 
         boFilms[b].title = boFilms[c].title
         boFilms[b].value = boFilms[c].value
-        boFilms[b].thumbnail = boFilms[c].thumbnail
+        //boFilms[b].thumbnail = boFilms[c].thumbnail
     }
     else {
         lose.style.display = "block";
@@ -470,17 +470,17 @@ lowBtn.addEventListener("click", function() {
 
         title1.innerHTML = `${boFilms[b].title}`
         value1.innerHTML = `$${boFilms[b].value.toLocaleString()}`
-        column1.style.backgroundImage = "url(" + boFilms[b].thumbnail
+        //column1.style.backgroundImage = "url(" + boFilms[b].thumbnail
 
         title2.innerHTML = `${boFilms[c].title}`
         value2.innerHTML = `?`
-        column2.style.backgroundImage = "url(" + boFilms[c].thumbnail
+        //column2.style.backgroundImage = "url(" + boFilms[c].thumbnail
 
         boFilms[a].value = boFilms[b].value
 
         boFilms[b].title = boFilms[c].title
         boFilms[b].value = boFilms[c].value
-        boFilms[b].thumbnail = boFilms[c].thumbnail
+        //boFilms[b].thumbnail = boFilms[c].thumbnail
     }
     else {
         lose.style.display = "block";
