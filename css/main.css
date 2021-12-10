@@ -346,6 +346,7 @@ section {
 
 .card:hover {
   transform: scale(1.1);
+  background-color: rgba(236, 47, 75, 0.45)
 }
 
 .cardinfo {
@@ -364,7 +365,7 @@ section {
 
 .cardname h2 {
   color: black;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 400;
 }
 
@@ -375,7 +376,8 @@ section {
 }
 
 .cardlinks a:hover {
-  color: #ec2F4B;
+  /*color: #ec2F4B;*/
+  color:rgba(0, 159, 255, 1)
 }
 
 .cardimage {
