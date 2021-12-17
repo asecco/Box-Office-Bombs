@@ -1,8 +1,8 @@
 html {
-    background-image: linear-gradient(-45deg, rgba(0, 159, 255, 0.45), rgba(236, 47, 75, 0.5)), url('/images/background2.jpg');
+    background-image: linear-gradient(-45deg, rgba(0, 159, 255, 0.45), rgba(236, 47, 75, 0.5)), url('/images/background.jpg');
     background-size: 120% 120%;
     height: 100%;
-    animation: gradient 55s ease infinite;
+    animation: gradient 35s ease infinite;
     font-family: "Poppins", sans-serif;
 }
 
@@ -346,7 +346,7 @@ section {
 
 .card:hover {
   transform: scale(1.1);
-  background-color: rgba(236, 47, 75, 0.45)
+  background-color: rgba(236, 47, 75, 0.2)
 }
 
 .cardinfo {
