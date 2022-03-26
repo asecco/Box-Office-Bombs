@@ -169,7 +169,17 @@ section {
 }
 
 #scoreboard {
-  text-align: right;
+  float: right;
+  display: inline;
+  color: white;
+  font-size: 34px;
+  font-weight: bold;
+  text-shadow: black 0px 0px 10px;
+}
+
+#highscore {
+  display: inline;
+  float: left;
   color: white;
   font-size: 34px;
   font-weight: bold;

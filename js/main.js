@@ -419,6 +419,17 @@ let score = 0;
 let scoreboard = document.getElementById("scoreboard");
 let scoreboardLose = document.getElementById("scoreboard2");
 
+let highscoreboard = document.getElementById("highscore");
+let highscore = window.localStorage.getItem("highscore");
+
+if (highscore === null) {
+    highscore = 0
+    window.localStorage.setItem("highscore", highscore)
+} else {
+    highscoreboard.innerHTML = "High Score: " + highscore
+    window.localStorage.setItem("highscore", highscore)
+}
+
 a = random();
 b = random();
 
@@ -492,4 +503,9 @@ lowBtn.addEventListener("click", function() {
 function scoreIncrease() {
     score++;
     scoreboard.innerHTML = "Score: " + score;
+    if (score > highscore) {
+        highscore = score
+        highscoreboard.innerHTML = "High Score: " + highscore
+        window.localStorage.setItem("highscore", highscore)
+    }
 }

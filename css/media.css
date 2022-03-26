@@ -45,7 +45,7 @@
         width: 75%;
         height: 75%;
     }
-    #scoreboard {
+    #scoreboard, #highscore {
         font-size: 28px;
     }
     .card {
@@ -77,7 +77,7 @@
     .disc {
         right: 46.2%;
     }
-    #scoreboard {
+    #scoreboard, #highscore {
         font-size: 30px;
     }
 }
