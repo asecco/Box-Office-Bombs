@@ -1,12 +1,14 @@
 document.getElementById("playBtn").addEventListener("click", switchVisible);
 let div1 = document.getElementById("homepage"),
     div2 = document.getElementById("content");
+    footer = document.getElementById("footer");
 
 function switchVisible() {
   if(!div1) return;
   if (getComputedStyle(div1).display == "block") {
     div1.style.display = "none";
     div2.style.display = "block";
+    footer.style.display = "none";
   } else {
     div1.style.display = "block";
     div2.style.display = "none";
